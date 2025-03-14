@@ -368,7 +368,7 @@ class Hospital:
 
 
     def idelete(self):
-        conn = mysql.connector.connect(host="localhost", username="root", password="Arm@1116", database="Mydata")
+        conn = mysql.connector.connect(host="localhost", username="root", password="root", database="Mydata")
         my_cursor = conn.cursor()
         query = "delete from hospital where Reference_No = %s"
         value = (self.Reference_No.get(),)
